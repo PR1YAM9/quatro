@@ -7,6 +7,8 @@
 body{
   background: #1B1B1B;
 }
+
+/* Meet the team */
 .mttCover{
   display: flex;
   text-align: center;
@@ -91,3 +93,34 @@ body{
     gap: 15px;
   }
 }
+/*# Meet the team #*/
+
+/* Recent Works */
+.rwCover{
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.carCover{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+}
+.rwHeading{
+  color: #E1D9C7;
+  font-size: 54px;
+  font-family: "Khand";
+  font-weight: 700;
+}
+.img{
+  width: 35%;
+}
+@media only screen and (max-width: 768px){
+.rwHeading {
+    margin: inherit;
+    font-size: 36px;
+}
+}
+/*# Recent Works #*/
