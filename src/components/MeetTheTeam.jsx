@@ -7,6 +7,11 @@ import linkedin from '../images/linked.svg'
 import github from '../images/codicon_github-inverted.svg'
 import hand from '../images/Waving Hand Light Skin Tone.png'
 import sanImg from '../images/ph_link-bold.png'
+import aadharPhone from '../images/aadharPhone.png'
+import priyamPhone from '../images/priyamPhone.png'
+import laibaPhone from '../images/LaibaPhone.png'
+import sanyaPhone from '../images/sanyaPhone.png'
+
 
 
 const MeetTheTeam = () => {
@@ -20,34 +25,40 @@ const MeetTheTeam = () => {
             desig: "Designer",
             linked:  "https://www.linkedin.com/in/sanya-malhotra-a26605195/",
             gitlink: "https://sanyamalhotra.notion.site/Hey-there-de12a51d919944bc830c5c686722b144?pvs=4",
-            colour:  "#B54B41"
+            colour:  "#B54B41",
+            imgSrcPhone: sanyaPhone
         },
         {
             id: 2,
             imgSrc: priyamImg,
             name: "Priyam Maini",
-            desig: "Developper",
+            desig: "Developer",
             linked:  "https://www.linkedin.com/in/priyam-maini-9730a419b/",
             gitlink: "https://github.com/PR1YAM9",
-            colour:  "#C6AF5E"
+            colour:  "#C6AF5E",
+            imgSrcPhone: priyamPhone
         },
         {
             id: 3,
             imgSrc: laibaImg,
             name: "Laiba Ahsan",
-            desig: "Developper",
+            desig: "Developer",
             linked:  "https://www.linkedin.com/in/laiba-ahsan-8a913a23a",
             gitlink: "https://github.com/laibaahsan27",
-            colour:  "#A491DD"
+            colour:  "#A491DD",
+            imgSrcPhone: laibaPhone
+            
         },
         {
             id: 4,
             imgSrc: aadharImg,
             name: "Aadhar Goel",
-            desig: "Developper",
+            desig: "Developer",
             linked:  "https://www.linkedin.com/in/aadhar-goel-b7173919b/",
             gitlink: "https://github.com/aadhar2003",
-            colour:  "#6C6C6C"
+            colour:  "#6C6C6C",
+            imgSrcPhone: aadharPhone
+
         }
     ]
 
@@ -64,9 +75,13 @@ const MeetTheTeam = () => {
             {data.map((data)=>{
                 return(
                 <div className='mttInner' key={data.id}>
-                    <div className='mttImage'><img src={data.imgSrc} alt={data.name} /></div>
+                
+
+                    <div className='mttImage'><img className='mttimg' src={data.imgSrc} alt={data.name} /></div>
+
+
                     <div className='mttContent'>
-                    <button className='mttName' style={{backgroundColor:`${data.colour}` ,justifyContent:'center'}}><span>{data.name}</span></button>
+                    <button className='mttName' style={{backgroundColor:`${data.colour}` ,justifyContent:'center'}}><span style={data.id===1 ? {padding:'0px'} : {padding:"13px"}}>{data.name}</span></button>
                     <div className='mttDesig' style={{display: 'flex',justifyContent:'center', paddingTop:'10px'}}>
                         <div className='desig'>{data.desig}</div>
                         <div className='mttlogo' style={{padding:'0 5px'}}><a target="_blank" rel='noreferrer' href={data.linked}><img src={linkedin} alt="linLogo" /></a></div>

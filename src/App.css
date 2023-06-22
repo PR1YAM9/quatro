@@ -7,18 +7,16 @@
 body{
   background: #1B1B1B;
 }
-
 .mttCover{
   display: flex;
   text-align: center;
   flex-direction: column;
-  /* max-width: 700px; */
   margin: 10px auto;
 }
 .mttheading{
   color: #E1D9C7;
   font-size: 54px;
-  font-family: Khand;
+  font-family: "Khand";
   font-weight: 700;
 }
 .desig{
@@ -29,16 +27,16 @@ body{
   font-weight: 100;
 }
 .mttName{
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 13px;
   color: #FFF;
   text-align: center;
   font-size: 24px;
-  font-family: Khand;
+  font-family: "Khand";
   font-weight: 600;
 }
 .mttName{
-  padding: 0px 8px 2px 8px;
+  padding: 0px 8px 32px 8px;
   height: 32px;
   margin-top: 10px;
 }
@@ -62,6 +60,7 @@ body{
   flex-direction: column;
   align-items: center;
 }
+
 @media only screen and (max-width: 768px) {
   .mttCover{
     margin-left: 33.5px;
@@ -73,8 +72,9 @@ body{
   .mttName{
     width: fit-content;
     text-align: center;
-    margin-top: 43%;
-    /* margin-left: 20px; */
+    margin-top: 13%;
+    height: auto;
+    padding: 0px 8px 0px 8px;
   }
   .mttInner{
     flex-direction: row;
@@ -82,5 +82,12 @@ body{
   .mttheading{
     margin: inherit;
     font-size: 36px;
+  }
+  .mttimg{
+    width: 80px;
+  }
+  .mttUs{
+    margin-left: inherit;
+    gap: 15px;
   }
 }
