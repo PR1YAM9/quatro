@@ -12,7 +12,7 @@ body{
   display: flex;
   text-align: center;
   flex-direction: column;
-  max-width: 700px;
+  /* max-width: 700px; */
   margin: 10px auto;
 }
 .mttheading{
@@ -36,4 +36,51 @@ body{
   font-size: 24px;
   font-family: Khand;
   font-weight: 600;
+}
+.mttName{
+  padding: 0px 8px 2px 8px;
+  height: 32px;
+  margin-top: 10px;
+}
+.mttP{
+  max-width: 700px;
+}
+.mttUs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+.mttInner{
+  display: flex;
+  flex-direction: column;
+}
+.mttContent{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .mttCover{
+    margin-left: 33.5px;
+    margin-right: 33.5px;
+  }
+  .mttUs{
+    flex-direction: column;
+  }
+  .mttName{
+    width: fit-content;
+    text-align: center;
+    margin-top: 43%;
+    /* margin-left: 20px; */
+  }
+  .mttInner{
+    flex-direction: row;
+  }
+  .mttheading{
+    margin: inherit;
+    font-size: 36px;
+  }
 }
