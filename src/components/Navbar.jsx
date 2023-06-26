@@ -8,6 +8,8 @@ export default function Navbar() {
   const navRef = useRef();
 
   const showNavbar = () => {
+    // var blur = document.getElementById('blur');
+    // blur.classList.toggle('active')
     navRef.current.classList.toggle("responsive_nav");
   }
   return (

@@ -56,6 +56,9 @@ body{
   .nav-btn{
     display: contents;
   }
+  .navButt:active{
+    color: rgba(163, 163, 163, 1);
+  }
   .navLinks{
     background-color: #1B1B1B;
     flex-direction: column;
@@ -80,7 +83,7 @@ body{
     background-color: #1B1B1B;
     border: none;
     font: 'Inter';
-    font-size: 16px;
+    font-size: 22px;
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
@@ -92,6 +95,9 @@ body{
   .responsive_nav{
     transform: none;
   }
+  /* .body#blur.active{
+    filter: blur(20px);
+  } */
   /* .nav-close-btn{
     
   } */
