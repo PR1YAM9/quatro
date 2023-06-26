@@ -10,6 +10,87 @@ body{
   background: #1B1B1B;
 }
 
+/* navbar */
+
+.navCON{
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 43px;
+}
+
+.navLinks{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.navButt{
+  text-decoration: none;
+  color: rgba(163, 163, 163, 1);
+  background-color: #1B1B1B;
+  border: none;
+  font: 'Inter';
+  font-size: 16px;
+  padding: 8px; 
+  cursor: pointer;
+}
+.navButt:hover{
+  color: #2CB67D;
+}
+.nav-btn{
+  padding: 5px;
+  cursor: pointer;
+  background-color: #1B1B1B;
+  border: none;
+  display: none;
+}
+
+@media screen and (max-width: 780px){
+  .nav-btn{
+    display: contents;
+  }
+  .navLinks{
+    background-color: #1B1B1B;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 21px 33px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(-100vh);
+
+  }
+  .navButt{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #2CB67D;
+    background-color: #1B1B1B;
+    border: none;
+    font: 'Inter';
+    font-size: 16px;
+    padding: 8px; 
+    cursor: pointer;
+    border-bottom: 1px solid rgba(54, 54, 54, 1);
+  }
+  .responsive_nav{
+    transform: none;
+  }
+  /* .nav-close-btn{
+    
+  } */
+
+
+}
+
+/* navbar ends */
+
 /* Meet the team */
 .mttCover{
   height: 100vh;
