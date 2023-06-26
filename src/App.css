@@ -53,20 +53,18 @@ body{
     background-color: #1B1B1B;
     flex-direction: column;
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
-    padding: 21px 33px;
     position: fixed;
     top: 0;
     left: 0;
-    height: 50%;
+    height: 30%;
     width: 100%;
     transition: 0.5s;
     transform: translateY(-100vh);
-
   }
   .navButt{
-    width: 100%;
+    width: 80%;
     align-items: center;
     text-align: center;
     text-decoration: none;
@@ -75,9 +73,13 @@ body{
     border: none;
     font: 'Inter';
     font-size: 16px;
-    padding: 8px; 
+    margin-left: 20px;
+    margin-right: 20px;
     cursor: pointer;
     border-bottom: 1px solid rgba(54, 54, 54, 1);
+  }
+  .navButtS{
+    border-bottom: none;
   }
   .responsive_nav{
     transform: none;

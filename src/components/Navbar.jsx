@@ -23,13 +23,13 @@ export default function Navbar() {
 
           <a href="/" className='navButt'>Contact</a>
         
-          <a href="/" className='navButt'>Faq</a>
+          <a href="/" className='navButt navButtS'>Faq</a>
           {/* <button className='nav-btn nav-close-btn' onClick={showNavbar} >
           <img src={navICON} alt="" />
         </button> */}
         </nav>
         <button className='nav-btn nav-close-btn' onClick={showNavbar} >
-          <img src={navICON} alt="" />
+          <img style={{objectFit: 'contain'}} src={navICON} alt="" />
         </button>
       </div>
     </div>
