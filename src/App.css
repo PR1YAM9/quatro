@@ -46,6 +46,13 @@ body{
 }
 
 @media screen and (max-width: 780px){
+  .navCON{
+    padding: 21px 33px;
+  }
+  .navbarLogo{
+    width: 58px;
+    height: 36px;
+  }
   .nav-btn{
     display: contents;
   }
@@ -56,6 +63,7 @@ body{
     justify-content: baseline;
     align-items: center;
     position: fixed;
+    padding-top: 60px;
     top: 0;
     left: 0;
     height: 30%;
