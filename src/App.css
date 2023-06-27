@@ -98,14 +98,75 @@ body{
   /* .body#blur.active{
     filter: blur(20px);
   } */
-  /* .nav-close-btn{
-    
-  } */
-
-
+  .nav-close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
 }
 
 /* navbar ends */
+
+/* hero text */
+
+.heroCon1{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 120px;
+}
+.heroCon2{
+  display: none;
+}
+.heroIcons{
+  position: relative;
+  padding-left: 122px;
+  padding-top: 53px;
+}
+.heroTxt{
+  position: absolute;
+  color: #E1D9C7;
+  padding: 90px 0;
+  width: 1000px;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Khand';
+  font-weight: 700;
+  line-height: 122.4%;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .heroCon1{
+    display: none;
+  }
+  .heroCon2{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 290px;
+  }
+  .heroIcons2{
+    /* width: 350px; */
+    /* height: 270px; */
+    position: relative;
+    padding-left: 30px;
+    padding-top: 190px;
+  }
+  .heroTxt2{
+    position: absolute;
+    color: #E1D9C7;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Khand';
+    font-weight: 700;
+    line-height: 122.4%;
+    text-transform: uppercase;
+    width: 320px;
+    padding: 200px 0;
+  }
+  
+}
+/* hero ends */
 
 /* Meet the team */
 .mttCover{
