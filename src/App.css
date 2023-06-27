@@ -235,6 +235,7 @@ body{
   display: flex;
   text-align: center;
   margin: 157px auto;
+  margin-bottom: 60px;
 }
 .rtHeading{
   color: #9747FF;

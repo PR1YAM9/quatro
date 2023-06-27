@@ -205,7 +205,7 @@ const FAQ = () => {
           </div>
         </div>
       </div>
-      <div style={{display:'flex',justifyContent:'center',color:'#E1D9C7',fontSize:'18px'}}>For further assistance, please feel free to reach out to us via  <a href="mailto:quatro.help@gmail.com.com" style={{color:'#2CB67D',textDecoration:'none',marginLeft:'3px'}}> email</a>.</div>
+      <div style={{display:'flex',justifyContent:'center',color:'#E1D9C7',fontSize:'18px',marginTop:'20px'}}>For further assistance, please feel free to reach out to us via  <a href="mailto:quatro.help@gmail.com.com" style={{color:'#2CB67D',textDecoration:'none',marginLeft:'3px'}}> email</a>.</div>
     </div>
   );
 };

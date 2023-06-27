@@ -5,6 +5,7 @@ import RecentWork from './components/RecentWork'
 import ReadyTo from './components/ReadyTo'
 import FAQ from './components/FAQ/FAQ'
 import Navbar from './components/Navbar'
+import ContactForm from './components/ContactForm'
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <MeetTheTeam/>
       <RecentWork/>
       <ReadyTo/>
+      <ContactForm/>
       <FAQ/>
     </>
   )
