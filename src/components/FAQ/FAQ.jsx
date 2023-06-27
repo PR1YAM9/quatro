@@ -90,7 +90,6 @@ const FAQ = () => {
                 color: "#E1D9C7",
                 backgroundColor: "#292929",
                 fontWeight: "800",
-                
               }}
             >
               What types of projects do you take ?
@@ -104,7 +103,11 @@ const FAQ = () => {
           >
             <div
               className="accordion-body"
-              style={{ color: "#E1D9C7", backgroundColor: "#292929" ,fontFamily: "Inter",}}
+              style={{
+                color: "#E1D9C7",
+                backgroundColor: "#292929",
+                fontFamily: "Inter",
+              }}
             >
               We handle various projects, including business websites,
               portfolios, personal sites, and more. Share your requirements with
@@ -147,7 +150,11 @@ const FAQ = () => {
           >
             <div
               className="accordion-body"
-              style={{ color: "#E1D9C7", backgroundColor: "#292929" ,fontFamily: "Inter",}}
+              style={{
+                color: "#E1D9C7",
+                backgroundColor: "#292929",
+                fontFamily: "Inter",
+              }}
             >
               We are capable of designing and developing projects of any size,
               from single-page websites to complete multi-page solutions.
@@ -188,7 +195,7 @@ const FAQ = () => {
           >
             <div
               className="accordion-body"
-              style={{ color: "#E1D9C7", backgroundColor: "#292929", }}
+              style={{ color: "#E1D9C7", backgroundColor: "#292929" }}
             >
               Delivery timeframes vary depending on the project's specific
               requirements. Let's have a discussion to understand your project
@@ -231,9 +238,15 @@ const FAQ = () => {
           >
             <div
               className="accordion-body"
-              style={{ color: "#E1D9C7", backgroundColor: "#292929",fontFamily: "Inter", }}
+              style={{
+                color: "#E1D9C7",
+                backgroundColor: "#292929",
+                fontFamily: "Inter",
+              }}
             >
-              For further assistance, please feel free to reach to us via email.
+              Yes, we can provide deployment assistance. Let's have a chat to
+              discuss your specific needs and explore the available deployment
+              options.
             </div>
           </div>
         </div>
@@ -260,7 +273,6 @@ const FAQ = () => {
           email
         </a>
         .
-      
       </div>
     </div>
   );
