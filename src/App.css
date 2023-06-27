@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 
 
 *{
@@ -355,6 +355,9 @@ p{
 .acc-width{
   width: 50%;
 }
+.faq-end br{
+  display: none;
+}
 
 @media only screen and (max-width: 600px){
   .faq-end{
@@ -364,7 +367,12 @@ p{
   .acc-width{
     width: 80%;
   }
- 
+  /* br{
+    display: revert;
+  } */
+  /* .footer-end{
+    margin-left:26vw;
+  } */
 }
 
 
