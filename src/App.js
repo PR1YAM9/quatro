@@ -7,6 +7,7 @@ import ReadyTo from './components/ReadyTo'
 import FAQ from './components/FAQ/FAQ'
 import Navbar from './components/Navbar'
 import ContactForm from './components/ContactForm'
+import Footer from './components/Footer'
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       <ReadyTo/>
       <ContactForm/>
       <FAQ/>
+      <Footer/>
     </>
   )
 }

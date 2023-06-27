@@ -8,7 +8,7 @@ const ContactForm = () => {
     document.body.appendChild(script);
   }, []);
   return (
-    <div className="d-flex justify-content-center">
+    <div className="d-flex justify-content-center" style={{marginBottom:'157px'}}>
       <iframe
         data-tally-src="https://tally.so/embed/n07l60?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
         loading="lazy"

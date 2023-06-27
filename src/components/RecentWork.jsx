@@ -29,7 +29,7 @@ const RecentWork = () => {
   }, []);
   return (
     <>
-      <div className="rwCover">
+      <div className="rwCover" id='work'>
         <div className="rwHeading" style={{color: '#E1D9C7'}}><h3>Our Recent Work</h3></div>
         <a target='_blank' rel='noreferrer' style={{textDecoration:'none'}} href="https://jm-seven-fawn.vercel.app/">
         <div className='carCover'>
