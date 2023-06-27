@@ -3,13 +3,21 @@ import "./FAQ.css";
 
 const FAQ = () => {
   return (
-    <div style={{ height: "400px", minHeight: "fit-content" }}>
+    <div style={{ minHeight: "fit-content", marginBottom: "100px" }} id="FAQ">
       <div className="d-flex justify-content-center">
-        <h3 style={{
-            color: "#E1D9C7" ,fontWeight:'800',fontSize:'35px',marginBottom:'25px'}}>FAQ</h3>
+        <h3
+          style={{
+            color: "#E1D9C7",
+            fontWeight: "800",
+            fontSize: "35px",
+            marginBottom: "25px",
+          }}
+        >
+          FAQ
+        </h3>
       </div>
       <div
-        className="accordion accordion-flush w-50 container"
+        className="accordion accordion-flush container acc-width"
         id="accordionFlushExample"
         style={{ color: "#E1D9C7", padding: "0px" }}
       >
@@ -30,7 +38,11 @@ const FAQ = () => {
               data-bs-target="#flush-collapseOne"
               aria-expanded="false"
               aria-controls="flush-collapseOne"
-              style={{ color: "#E1D9C7", backgroundColor: "#292929",fontWeight:'800'}}
+              style={{
+                color: "#E1D9C7",
+                backgroundColor: "#292929",
+                fontWeight: "800",
+              }}
             >
               What is your Pricing model ?
             </button>
@@ -43,7 +55,11 @@ const FAQ = () => {
           >
             <div
               className="accordion-body"
-              style={{ color: "#E1D9C7", backgroundColor: "#292929",textAlign:'left'}}
+              style={{
+                color: "#E1D9C7",
+                backgroundColor: "#292929",
+                textAlign: "left",
+              }}
             >
               Our pricing model is tailored to each project. Let's have a chat
               to understand your requirements and provide you with personalized
@@ -69,9 +85,13 @@ const FAQ = () => {
               data-bs-target="#flush-collapseThree"
               aria-expanded="false"
               aria-controls="flush-collapseThree"
-              style={{ color: "#E1D9C7", backgroundColor: "#292929",fontWeight:'800' }}
+              style={{
+                color: "#E1D9C7",
+                backgroundColor: "#292929",
+                fontWeight: "800",
+              }}
             >
-            What types of projects do you take ?
+              What types of projects do you take ?
             </button>
           </h2>
           <div
@@ -108,9 +128,13 @@ const FAQ = () => {
               data-bs-target="#flush-collapseFour"
               aria-expanded="false"
               aria-controls="flush-collapseFour"
-              style={{ color: "#E1D9C7", backgroundColor: "#292929" ,fontWeight:'800'}}
+              style={{
+                color: "#E1D9C7",
+                backgroundColor: "#292929",
+                fontWeight: "800",
+              }}
             >
-            What is the scale of projects you can handle?
+              What is the scale of projects you can handle?
             </button>
           </h2>
           <div
@@ -123,8 +147,8 @@ const FAQ = () => {
               className="accordion-body"
               style={{ color: "#E1D9C7", backgroundColor: "#292929" }}
             >
-            We are capable of designing and developing projects of any size,
-            from single-page websites to complete multi-page solutions.
+              We are capable of designing and developing projects of any size,
+              from single-page websites to complete multi-page solutions.
             </div>
           </div>
         </div>
@@ -145,9 +169,13 @@ const FAQ = () => {
               data-bs-target="#flush-collapseFive"
               aria-expanded="false"
               aria-controls="flush-collapseFive"
-              style={{ color: "#E1D9C7", backgroundColor: "#292929" ,fontWeight:'800'}}
+              style={{
+                color: "#E1D9C7",
+                backgroundColor: "#292929",
+                fontWeight: "800",
+              }}
             >
-             What is the estimated delivery time for projects?
+              What is the estimated delivery time for projects?
             </button>
           </h2>
           <div
@@ -184,9 +212,13 @@ const FAQ = () => {
               data-bs-target="#flush-collapseSix"
               aria-expanded="false"
               aria-controls="flush-collapseSix"
-              style={{ color: "#E1D9C7", backgroundColor: "#292929",fontWeight:'800' }}
+              style={{
+                color: "#E1D9C7",
+                backgroundColor: "#292929",
+                fontWeight: "800",
+              }}
             >
-            Do you provide deployment assistance for projects ?
+              Do you provide deployment assistance for projects ?
             </button>
           </h2>
           <div
@@ -198,14 +230,33 @@ const FAQ = () => {
             <div
               className="accordion-body"
               style={{ color: "#E1D9C7", backgroundColor: "#292929" }}
-            >
-              For further assistance, please feel free to reach out to us via
-              email.
-            </div>
+            ></div>
           </div>
         </div>
       </div>
-      <div style={{display:'flex',justifyContent:'center',color:'#E1D9C7',fontSize:'18px',marginTop:'20px'}}>For further assistance, please feel free to reach out to us via  <a href="mailto:quatro.help@gmail.com.com" style={{color:'#2CB67D',textDecoration:'none',marginLeft:'3px'}}> email</a>.</div>
+      <div
+        className="faq-end"
+        style={{
+          justifyContent: "center",
+          color: "#E1D9C7",
+          fontSize: "18px",
+          marginTop: "20px",
+        }}
+      >
+        For further assistance, please feel free to reach out to us via
+        <a
+          href="mailto:quatro.help@gmail.com.com"
+          style={{
+            color: "#2CB67D",
+            textDecoration: "none",
+            display: "inline",
+            marginLeft: "5px",
+          }}
+        >
+          email
+        </a>
+        .
+      </div>
     </div>
   );
 };

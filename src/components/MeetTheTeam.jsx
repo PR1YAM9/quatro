@@ -64,7 +64,7 @@ const MeetTheTeam = () => {
 
 
   return (
-    <div className='mttCover'>
+    <div className='mttCover' id="about">
         <div className="mttheading">
             <p style={{fontWeight:'bold'}}>Meet The <span style={{color:'#2CB67D'}}>Team</span><img style={{width:"40px",marginLeft:'10px', marginBottom:'-6px'}} src={hand} alt="" /></p>
         </div>
