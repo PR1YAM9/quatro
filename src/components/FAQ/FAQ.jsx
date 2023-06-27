@@ -247,7 +247,7 @@ const FAQ = () => {
           marginTop: "20px",
         }}
       >
-        For further assistance, please feel free to <br/><span className="footer-end">reach out to us via
+        For further assistance, please feel free to reach out to us via
         <a
           href="mailto:quatro.help@gmail.com.com"
           style={{
@@ -260,7 +260,7 @@ const FAQ = () => {
           email
         </a>
         .
-        </span>
+      
       </div>
     </div>
   );
