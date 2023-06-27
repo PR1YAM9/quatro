@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <div style={{fontFamily:'Inter'}}>
+    <div style={{ fontFamily: "Inter" }}>
       <div className="first-footer">
         <div
           className="d-flex justify-content-center"
@@ -29,19 +29,17 @@ const Footer = () => {
               </Link>
             </div>
             <div className="nav-items">
-            <Link to="work" spy={true} smooth={true} duration={500}>
-              <p>Work</p>
+              <Link to="work" spy={true} smooth={true} duration={500}>
+                <p>Work</p>
               </Link>
             </div>
             <div className="nav-items">
-            <Link to="contact" spy={true} smooth={true} duration={500}>
-              Contact
+              <Link to="contact" spy={true} smooth={true} duration={500}>
+                Contact
               </Link>
             </div>
             <div className="nav-items">
-            <Link to="FAQ" spy={true} smooth={true} duration={500}>
               <p>FAQ</p>
-              </Link>
             </div>
           </div>
         </div>
@@ -50,7 +48,9 @@ const Footer = () => {
         className="second-footer d-flex justify-content-center p-2"
         style={{ backgroundColor: "#125E3E", color: "white", fontSize: "12px" }}
       >
-        <p style={{ marginRight: "25px" }}>© 2023 Qautro. All rights reserved.</p>
+        <p style={{ marginRight: "25px" }}>
+          © 2023 Qautro. All rights reserved.
+        </p>
         <p>
           Made with <img src={heart} alt="" />
         </p>
