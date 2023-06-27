@@ -49,6 +49,31 @@ body{
   .navCON{
     padding: 21px 33px;
   }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .navCON {
+    position: relative;
+    z-index: 10000;
+  }
+
+
+
   .navbarLogo{
     width: 58px;
     height: 36px;
@@ -60,16 +85,16 @@ body{
     color: rgba(163, 163, 163, 1);
   }
   .navLinks{
-    background-color: #1B1B1B;
+    z-index: 2;
+    background-color: #141414;
     flex-direction: column;
     display: flex;
-    justify-content: baseline;
     align-items: center;
     position: fixed;
-    padding-top: 60px;
+    padding-bottom: 10px;
     top: 0;
     left: 0;
-    height: 30%;
+    height: 40%;
     width: 100%;
     transition: 0.5s;
     transform: translateY(-100vh);
@@ -80,28 +105,20 @@ body{
     text-align: center;
     text-decoration: none;
     color: #2CB67D;
-    background-color: #1B1B1B;
+    background-color: #141414;
     border: none;
     font: 'Inter';
     font-size: 22px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     cursor: pointer;
-    border-bottom: 1px solid rgba(54, 54, 54, 1);
+    border-bottom: 2px solid rgba(54, 54, 54, 1);
   }
   .navButtS{
     border-bottom: none;
   }
   .responsive_nav{
     transform: none;
-  }
-  /* .body#blur.active{
-    filter: blur(20px);
-  } */
-  .nav-close-btn{
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
   }
 }
 
@@ -144,6 +161,7 @@ body{
     display: flex;
     justify-content: space-around;
     margin-bottom: 290px;
+    /* z-index: -1; */
   }
   .heroIcons2{
     /* width: 350px; */
