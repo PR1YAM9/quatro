@@ -8,6 +8,7 @@ import FAQ from './components/FAQ/FAQ'
 import Navbar from './components/Navbar'
 import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
+import Services from './components/Services'
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <MeetTheTeam/>
+      <Services/>
       <RecentWork/>
       <ReadyTo/>
       <ContactForm/>

@@ -309,18 +309,34 @@ body{
   margin-top: -20px;
   color: #D3B0FF;
   font-size: 40px;
-  font-family: Khand;
+  font-family: 'Khand';
   font-weight: 700;
 }
 .rtMain{
   color: #D9C6EF;
   text-align: center;
   font-size: 20px;
-  font-family: Inter;
+  font-family: 'Inter';
   font-weight: 300;
 }
 
 @media only screen and (max-width: 768px){
+  .dText{
+    width: 250px;
+  }
+  .sCover{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .sCover{
+    flex-direction: column;
+  }
+  .outerCar{
+    flex-direction: column;
+  }
+  .rtMain{
+    max-width: 0%;
+  }
   .rtCover{
     margin-left: 33.5px;
     margin-right: 33.5px;
@@ -329,7 +345,7 @@ body{
     margin: inherit;
     font-size: 36px;
     margin: auto;
-    width: 63%;
+    /* width: 63%; */
     line-height: 110.4%;
   }
   .rtSecond{
@@ -341,6 +357,10 @@ body{
     font-size: 15px;
     max-width: none;
   }
+
+}
+.outerCar{
+  display: flex;
 }
 .nav-items{
   margin: 3px 5px;
@@ -374,6 +394,47 @@ p{
     margin-left:26vw;
   } */
 }
-
+.img{
+  width: 73%;
+}
 
 /* # Ready to work with us # */
+.sCover{
+  padding: 0 10%;
+  /* height: 100vh; */
+  justify-content: center;
+  /* margin: 0px auto; */
+  display: flex;
+  margin-bottom: 100px;
+  gap: 130px;
+}
+.sLeft{
+  text-align: left;
+  color: #E1D9C7;
+  font-size: 54px;
+  font-family: 'Khand';
+  font-weight: 700;
+  line-height: 114.023%;
+}
+.sRight{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dText{
+  display: flex;
+  width: 376px;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 8px;
+  background: #292929;
+  color: #E1D9C7;
+}
+@media only screen and (max-width: 768px){
+  .dText{
+    width: 300px;
+  }
+  .sCover{
+    gap: 70px;
+  }
+}
