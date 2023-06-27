@@ -11,6 +11,7 @@ const FAQ = () => {
             fontWeight: "800",
             fontSize: "35px",
             marginBottom: "25px",
+            fontFamily:'Khand'
           }}
         >
           FAQ
@@ -42,6 +43,7 @@ const FAQ = () => {
                 color: "#E1D9C7",
                 backgroundColor: "#292929",
                 fontWeight: "800",
+                fontFamily:'Khand'
               }}
             >
               What is your Pricing model ?
@@ -90,6 +92,7 @@ const FAQ = () => {
                 color: "#E1D9C7",
                 backgroundColor: "#292929",
                 fontWeight: "800",
+                fontFamily:'Khand'
               }}
             >
               What types of projects do you take ?
@@ -137,6 +140,7 @@ const FAQ = () => {
                 color: "#E1D9C7",
                 backgroundColor: "#292929",
                 fontWeight: "800",
+                fontFamily:'Khand'
               }}
             >
               What is the scale of projects you can handle?
@@ -168,6 +172,7 @@ const FAQ = () => {
             backgroundColor: "#292929",
             marginBottom: "6px",
             border: "none",
+            
           }}
         >
           <h2 className="accordion-header" id="flush-headingFive">
@@ -182,6 +187,7 @@ const FAQ = () => {
                 color: "#E1D9C7",
                 backgroundColor: "#292929",
                 fontWeight: "800",
+                fontFamily:'Khand'
               }}
             >
               What is the estimated delivery time for projects?
@@ -225,6 +231,7 @@ const FAQ = () => {
                 color: "#E1D9C7",
                 backgroundColor: "#292929",
                 fontWeight: "800",
+                fontFamily:'Khand'
               }}
             >
               Do you provide deployment assistance for projects ?
