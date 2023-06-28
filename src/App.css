@@ -189,7 +189,7 @@ body{
 
 /* Meet the team */
 .mttCover{
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -284,7 +284,8 @@ body{
 }
 .carCover{
   display: flex;
-  margin: 0 auto;
+  /* padding: 0 80px;S */
+  /* margin: 0 auto; */
   justify-content: center;
   flex-direction: column;
 }
@@ -293,6 +294,7 @@ body{
   font-size: 54px;
   font-family: "Khand";
   font-weight: 700;
+  margin-bottom: 50px;
 }
 .img{
   width: 35%;
@@ -337,8 +339,26 @@ body{
   font-family: 'Inter';
   font-weight: 300;
 }
+.sLeft{
+  text-align: left;
+  color: #E1D9C7;
+  font-size: 54px;
+  font-family: 'Khand';
+  font-weight: 700;
+  line-height: 114.023%;
+  width: 300px;
+}
 
 @media only screen and (max-width: 768px){
+  .sLeft{
+    text-align: center;
+    color: #E1D9C7;
+    font-size: 40px;
+    font-family: 'Khand';
+    font-weight: 700;
+    line-height: 114.023%;
+    width: 300px;
+  }
   .dText{
     width: 250px;
   }
@@ -379,6 +399,8 @@ body{
 }
 .outerCar{
   display: flex;
+  justify-content: space-around;
+  padding: 0 60px;
 }
 .nav-items{
   margin: 3px 5px;
@@ -418,22 +440,18 @@ p{
 
 /* # Ready to work with us # */
 .sCover{
-  padding: 0 10%;
+  /* padding: 0 10%; */
   /* height: 100vh; */
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: space-evenly;
   /* margin: 0px auto; */
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
+  margin-top: 120px;
   gap: 130px;
+  align-items: center;
 }
-.sLeft{
-  text-align: left;
-  color: #E1D9C7;
-  font-size: 54px;
-  font-family: 'Khand';
-  font-weight: 700;
-  line-height: 114.023%;
-}
+
 .sRight{
   display: flex;
   flex-direction: column;
