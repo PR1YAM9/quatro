@@ -26,7 +26,7 @@ const data = [
 const Services = () => {
   return (
     <>
-        <div className='sCover'>
+        <div className='sCover' id="Services">
             <div className='sLeft' style={{color: '#E1D9C7'}}>
                 Ensuring that <span style={{color: '#2CB67D'}}>every pixel</span> and <span style={{color: '#2CB67D'}}>line of code</span> is meticulously crafted
             </div>
