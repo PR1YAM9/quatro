@@ -38,7 +38,7 @@ export default function Navbar() {
       <div className="navCON">
         <img className="navbarLogo" src={navLOGO} alt="LOGO" />
         <nav className="navLinks" ref={navRef}>
-          
+
             <Link
               to="about"
               className="navButt"
@@ -85,7 +85,7 @@ export default function Navbar() {
           
             <Link
               to="FAQ"
-              className="navButt"
+              className="navButt navButtS"
               spy={true}
               smooth={true}
               duration={200}
