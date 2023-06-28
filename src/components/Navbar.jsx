@@ -38,7 +38,7 @@ export default function Navbar() {
       <div className="navCON">
         <img className="navbarLogo" src={navLOGO} alt="LOGO" />
         <nav className="navLinks" ref={navRef}>
-          <div className="nav-items">
+          
             <Link
               to="about"
               className="navButt"
@@ -49,8 +49,7 @@ export default function Navbar() {
             >
               About
             </Link>
-          </div>
-          <div className="nav-items">
+
             <Link
               to="Services"
               className="navButt"
@@ -61,8 +60,7 @@ export default function Navbar() {
             >
               Services
             </Link>
-          </div>
-          <div className="nav-items">
+
             <Link
               to="work"
               className="navButt"
@@ -73,8 +71,7 @@ export default function Navbar() {
             >
               Work
             </Link>
-          </div>
-          <div className="nav-items">
+
             <Link
               to="contact"
               className="navButt"
@@ -85,8 +82,7 @@ export default function Navbar() {
             >
               Contact
             </Link>
-          </div>
-          <div className="nav-items">
+          
             <Link
               to="FAQ"
               className="navButt"
@@ -97,7 +93,7 @@ export default function Navbar() {
             >
               Faq
             </Link>
-          </div>
+          
         </nav>
         <button className="nav-btn" onClick={showNavbar}>
           <img style={{ objectFit: 'contain' }} src={navICON} alt="" />
