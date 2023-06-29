@@ -33,14 +33,14 @@ const RecentWork = () => {
       <div className="rwCover" id='work'>
         <div className="rwHeading" style={{color: '#E1D9C7'}}>Our Recent Work</div>
         <div className='outerCar'>
+        <a target='_blank' rel='noreferrer' style={{textDecoration:'none'}} href="https://www.jagritimalhotra.com">
         <div className='carCover'>
-        <a target='_blank' rel='noreferrer' style={{textDecoration:'none'}} href="www.jagritimalhotra.com">
           <div className="carousel">
             <img className='img' src={images[currentIndex]} alt="Carousel" />
           </div>
           <h5 style={{color: "#818181", fontSize: "13px",fontFamily: 'Inter',fontWeight:'400',marginTop:'7px'}}>Click to view the live website</h5>
-      </a>  
         </div>
+      </a>  
         <div className='carCover'>
           <div className="carousel">
             <img className='img' style={{borderRadius:'13px'}} src={images2[currentIndex]} alt="Carousel " />
