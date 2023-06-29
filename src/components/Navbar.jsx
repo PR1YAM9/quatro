@@ -1,12 +1,13 @@
-import React from 'react'
-import navLOGO from '../images/nav logo desktop.png'
-import navICON from '../images/menu icon.png'
-import { useRef,useEffect,useCallback } from 'react'
-
+import React from 'react';
+import navLOGO from '../images/nav logo desktop.png';
+import navICON from '../images/menu icon.png';
+import { useRef, useEffect, useCallback } from 'react';
+import { Link } from 'react-scroll';
 
 export default function Navbar() {
   const navRef = useRef();
   const overlayRef = useRef();
+
   const showNavbar = useCallback((event) => {
     event.stopPropagation();
     navRef.current.classList.toggle('responsive_nav');
@@ -20,6 +21,11 @@ export default function Navbar() {
     }
   }, []);
 
+  const handleMenuOptionClick = useCallback(() => {
+    navRef.current.classList.remove('responsive_nav');
+    overlayRef.current.classList.remove('show');
+  }, []);
+
   useEffect(() => {
     document.addEventListener('click', handleBackgroundClick);
     return () => {
@@ -27,36 +33,73 @@ export default function Navbar() {
     };
   }, [handleBackgroundClick]);
 
-return (
-  <div>
-    <div className="navCON">
-      <img className="navbarLogo" src={navLOGO} alt="LOGO" />
-      <nav className="navLinks" ref={navRef}>
-        <a href="/" className="navButt">
-          About
-        </a>
+  return (
+    <div>
+      <div className="navCON">
+        <img className="navbarLogo" src={navLOGO} alt="LOGO" />
+        <nav className="navLinks" ref={navRef}>
 
-        <a href="/" className="navButt">
-          Services
-        </a>
+            <Link
+              to="about"
+              className="navButt"
+              spy={true}
+              smooth={true}
+              duration={200}
+              onClick={handleMenuOptionClick}
+            >
+              About
+            </Link>
 
-        <a href="/" className="navButt">
-          Work
-        </a>
+            <Link
+              to="Services"
+              className="navButt"
+              spy={true}
+              smooth={true}
+              duration={200}
+              onClick={handleMenuOptionClick}
+            >
+              Services
+            </Link>
 
-        <a href="/" className="navButt">
-          Contact
-        </a>
+            <Link
+              to="work"
+              className="navButt"
+              spy={true}
+              smooth={true}
+              duration={200}
+              onClick={handleMenuOptionClick}
+            >
+              Work
+            </Link>
 
-        <a href="/" className="navButt navButtS">
-          Faq
-        </a>
-      </nav>
-      <button className="nav-btn" onClick={showNavbar}>
-        <img style={{ objectFit: 'contain' }} src={navICON} alt="" />
-      </button>
+            <Link
+              to="contact"
+              className="navButt"
+              spy={true}
+              smooth={true}
+              duration={200}
+              onClick={handleMenuOptionClick}
+            >
+              Contact
+            </Link>
+          
+            <Link
+              to="FAQ"
+              className="navButt navButtS"
+              spy={true}
+              smooth={true}
+              duration={200}
+              onClick={handleMenuOptionClick}
+            >
+              Faq
+            </Link>
+          
+        </nav>
+        <button className="nav-btn" onClick={showNavbar}>
+          <img style={{ objectFit: 'contain' }} src={navICON} alt="" />
+        </button>
+      </div>
+      <div className="overlay" ref={overlayRef}></div>
     </div>
-    <div className="overlay" ref={overlayRef}></div>
-  </div>
-);
+  );
 }

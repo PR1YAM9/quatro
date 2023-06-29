@@ -19,22 +19,22 @@ const Footer = () => {
               <img src={navLOGO} alt="" />
             </div>
             <div className="nav-items">
-              <Link to="about" spy={true} smooth={true} duration={500}>
+              <Link to="about" spy={true} smooth={true} duration={200}>
                 About
               </Link>
             </div>
             <div className="nav-items">
-              <Link to="hello" spy={true} smooth={true} duration={500}>
+              <Link to="Services" spy={true} smooth={true} duration={200}>
                 Services
               </Link>
             </div>
             <div className="nav-items">
-              <Link to="work" spy={true} smooth={true} duration={500}>
+              <Link to="work" spy={true} smooth={true} duration={200}>
                 <p>Work</p>
               </Link>
             </div>
             <div className="nav-items">
-              <Link to="contact" spy={true} smooth={true} duration={500}>
+              <Link to="contact" spy={true} smooth={true} duration={200}>
                 Contact
               </Link>
             </div>
