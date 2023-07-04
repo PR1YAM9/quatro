@@ -150,14 +150,12 @@ html{
 .heroIcons{
   position: relative;
   padding-left: 122px;
-  /* padding-top: 53px; */
-  padding-top: 4.5%;
+  padding-top: 53px;
 }
 .heroTxt{
   position: absolute;
   color: #E1D9C7;
-  /* padding: 90px 0; */
-  padding: 6% 0;
+  padding: 90px 0;
   width: 1000px;
   text-align: center;
   font-size: 80px;
