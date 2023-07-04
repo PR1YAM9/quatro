@@ -1,5 +1,6 @@
 import React from 'react';
-import navLOGO from '../images/nav logo desktop.png';
+import navLOGO from '../images/desktop logo.svg';
+import phoneLOGO from '../images/phone logo.svg'
 import navICON from '../images/menu icon.png';
 import { useRef, useEffect, useCallback } from 'react';
 import { Link } from 'react-scroll';
@@ -36,7 +37,8 @@ export default function Navbar() {
   return (
     <div>
       <div className="navCON">
-        <img className="navbarLogo" src={navLOGO} alt="LOGO" />
+      <img className="navbarLogo" src={navLOGO} alt="LOGO" />
+        <img className="phoneLogo" src={phoneLOGO} alt="LOGO" />
         <nav className="navLinks" ref={navRef}>
 
             <Link

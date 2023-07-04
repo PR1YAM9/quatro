@@ -14,6 +14,10 @@ html{
 }
 /* navbar */
 
+.phoneLogo{
+  display: none;
+}
+
 .navCON{
   display: flex;
   justify-content: space-between;
@@ -51,6 +55,13 @@ html{
   .navCON{
     padding: 21px 33px;
   }
+  .navbarLogo{
+    display: none;
+  }
+  .phoneLogo{
+    display: block;
+  }
+
   .overlay {
     position: fixed;
     top: 0;
