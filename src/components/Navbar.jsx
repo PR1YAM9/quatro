@@ -1,6 +1,6 @@
 import React from 'react';
 import navLOGO from '../images/desktop logo.svg';
-import phoneLOGO from '../images/phone logo.svg'
+import phoneLOGO from '../images/phone logo.svg';
 import navICON from '../images/menu icon.png';
 import { useRef, useEffect, useCallback } from 'react';
 import { Link } from 'react-scroll';

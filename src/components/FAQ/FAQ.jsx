@@ -161,7 +161,7 @@ const FAQ = () => {
               }}
             >
               We are capable of designing and developing projects of any size,
-              from single-page websites to complete multi-page solutions.
+              from single-page websites to complete multi-page full stack solutions.
             </div>
           </div>
         </div>

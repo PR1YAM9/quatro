@@ -1,5 +1,7 @@
 import React from "react";
-import navLOGO from "../images/footer logo desktop.png";
+// import navLOGO from "../images/footer logo desktop.png";
+// import navLOGO from '../images/desktop logo.svg';
+import navLOGO from '../images/phone logo.svg';
 import heart from "../images/Vector (5).png";
 import { Link } from "react-scroll";
 
@@ -49,7 +51,7 @@ const Footer = () => {
         style={{ backgroundColor: "#125E3E", color: "white", fontSize: "12px" }}
       >
         <p style={{ marginRight: "25px" }}>
-          © 2023 Qautro. All rights reserved.
+          © 2023 Quatro. All rights reserved.
         </p>
         <p>
           Made with <img src={heart} alt="" />
