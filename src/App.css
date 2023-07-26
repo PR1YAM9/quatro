@@ -491,3 +491,9 @@ p{
     width: 100%
   }
 }
+.nav-items{
+  cursor: pointer;
+}
+.nav-items:hover{
+  color: #E1D9C7;
+}
