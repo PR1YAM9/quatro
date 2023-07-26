@@ -27,7 +27,7 @@ const App = () => {
     return (
       <div style={{ backgroundColor: '# 1B1B1B', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
         <Ripples 
-      size={100}
+      size={130}
       speed={2} 
       color="#2CB67D" 
       />
