@@ -11,7 +11,6 @@ import Footer from './components/Footer';
 import Services from './components/Services';
 import { Ripples } from '@uiball/loaders';
 
-
 const App = () => {
   const [loading, setLoading] = useState(true);
 
@@ -25,18 +24,17 @@ const App = () => {
 
   if (loading) {
     return (
-      <div style={{ backgroundColor: '# 1B1B1B', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
+      <div style={{ backgroundColor: '#1B1B1B', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
         <Ripples 
-      size={130}
-      speed={2} 
-      color="#2CB67D" 
-      />
+          size={130}
+          speed={2} 
+          color="#2CB67D" 
+        />
       </div>
     );
   }
   return (
     <div className='App' style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      
       <Navbar/>
       <Hero/>
       <MeetTheTeam/>
@@ -47,7 +45,7 @@ const App = () => {
       <FAQ/>
       <Footer/>
     </div>
-  )
+  );
 }
 
 export default App;
