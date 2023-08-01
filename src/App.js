@@ -10,8 +10,20 @@ import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import Services from './components/Services';
 import { Ripples } from '@uiball/loaders';
+import ReactGA from "react-ga4";
 
 const App = () => {
+  const TRACKING_ID = "G-LRXQVHVPNF"; // YOUR_OWN_TRACKING_ID
+  ReactGA.initialize(TRACKING_ID);
+  ReactGA.event({
+    category: 'User',
+    action: 'Created an Account'
+  });
+  ReactGA.exception({
+    description: 'An error ocurred',
+    fatal: true
+  });
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
