@@ -14,9 +14,9 @@ const ContactForm = () => {
         loading="lazy"
         width="80%"
         height="292"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
+        frameBorder="0"
+        marginHeight="0"
+        marginWidth="0"
         title=" "
     
       ></iframe>
