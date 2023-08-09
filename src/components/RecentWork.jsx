@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import jm1 from '../images/jm1.png'
 import jm2 from '../images/jm2.png'
 import jm3 from '../images/jm3.png'
-import q1 from '../images/q1 desktop.png'
-import q2 from '../images/q2 desktop.png'
+import q1 from '../images/p desktop.png'
+import q2 from '../images/p2 desktop.png'
 import q3 from '../images/q3 desktop.png'
 
 const images= [
@@ -41,12 +41,14 @@ const RecentWork = () => {
           <h5 style={{color: "#818181", fontSize: "13px",fontFamily: 'Inter',fontWeight:'400',marginTop:'7px'}}>Click to view the live website</h5>
         </div>
       </a>  
+      <a style={{textDecoration:'none'}} href="https://my-app-six-inky.vercel.app/">
         <div className='carCover'>
           <div className="carousel">
             <img className='img' style={{borderRadius:'13px'}} src={images2[currentIndex]} alt="Carousel " />
           </div>
-          <h5 style={{color: "#818181", fontSize: "13px",fontFamily: 'Inter',fontWeight:'400', marginTop:'7px'}}>You are viewing this website :)</h5>
+          <h5 style={{color: "#818181", fontSize: "13px",fontFamily: 'Inter',fontWeight:'400', marginTop:'7px',textDecoration:'none'}}>Click to view the live website</h5>
         </div>
+        </a>
         </div>
       </div>
     </>
